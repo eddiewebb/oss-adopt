@@ -1,0 +1,11 @@
+orbs:
+  common_tasks: eddiewebb/common_tasks@0.1.0
+version: 2.1
+
+jobs:
+  build:
+    machine: true
+    steps:
+      - checkout
+      - common_tasks/run_shared_task:
+          task-name: demo-task
